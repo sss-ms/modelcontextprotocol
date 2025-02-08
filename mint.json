@@ -1,0 +1,106 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Model Context Protocol",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "theme": "quill",
+  "colors": {
+    "primary": "#09090b",
+    "light": "#FAFAFA",
+    "dark": "#09090b"
+  },
+  "topbarLinks": [],
+  "topbarCtaButton": {
+    "name": "GitHub",
+    "url": "https://github.com/sss-ms/modelcontextprotocol"
+  },
+  "search": {
+    "location": "top"
+  },
+  "anchors": [
+    {
+      "name": "Python SDK",
+      "icon": "python",
+      "url": "https://github.com/modelcontextprotocol/python-sdk"
+    },
+    {
+      "name": "TypeScript SDK",
+      "icon": "square-js",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+    },
+    {
+      "name": "Kotlin SDK",
+      "icon": "square-k",
+      "url": "https://github.com/modelcontextprotocol/kotlin-sdk"
+    },
+    {
+      "name": "规范",
+      "icon": "book",
+      "url": "https://spec.modelcontextprotocol.io"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "开始使用",
+      "pages": [
+        "introduction",
+        {
+          "group": "快速入门",
+          "pages": ["quickstart/server", "quickstart/client", "quickstart/user"]
+        },
+        "examples",
+        "clients"
+      ]
+    },
+    {
+      "group": "教程",
+      "pages": [
+        "tutorials/building-mcp-with-llms",
+        "docs/tools/debugging",
+        "docs/tools/inspector"
+      ]
+    },
+    {
+      "group": "概念",
+      "pages": [
+        "docs/concepts/architecture",
+        "docs/concepts/resources",
+        "docs/concepts/prompts",
+        "docs/concepts/tools",
+        "docs/concepts/sampling",
+        "docs/concepts/roots",
+        "docs/concepts/transports"
+      ]
+    },
+    {
+      "group": "开发",
+      "pages": [
+        "development/updates",
+        "development/roadmap",
+        "development/contributing"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/sss-ms/modelcontextprotocol"
+  },
+  "feedback": {
+    "thumbsRating": true
+  },
+  "redirects": [
+    {
+      "source": "/tutorials/building-a-client",
+      "destination": "/quickstart/client"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/quickstart/server"
+    }
+  ],
+  "metadata": {
+    "og:image": "https://raw.githubusercontent.com/sss-ms/modelcontextprotocol/main/images/og-image.png"
+  }
+}
