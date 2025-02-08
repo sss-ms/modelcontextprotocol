@@ -3,8 +3,9 @@ title: "基础协议"
 description: "Model Context Protocol 基础协议规范"
 ---
 
-{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
-{{< /callout >}}
+:::info
+**协议版本**: 2024-11-05
+:::
 
 所有 MCP 客户端和服务器之间的消息 **MUST** 遵循 [JSON-RPC 2.0](https://www.jsonrpc.org/specification) 规范。协议定义了三种基本消息类型：
 
@@ -32,14 +33,14 @@ Model Context Protocol 由以下几个协同工作的关键组件组成：
 
 有关不同组件的更多详细信息，请参阅以下页面：
 
-{{< cards >}}
-{{< card link="/specification/2024-11-05/basic/lifecycle" title="生命周期" icon="refresh" >}}
-{{< card link="/specification/2024-11-05/server/resources" title="资源" icon="document" >}}
-{{< card link="/specification/2024-11-05/server/prompts" title="提示词" icon="chat-alt-2" >}}
-{{< card link="/specification/2024-11-05/server/tools" title="工具" icon="adjustments" >}}
-{{< card link="/specification/2024-11-05/server/utilities/logging" title="日志" icon="annotation" >}}
-{{< card link="/specification/2024-11-05/client/sampling" title="采样" icon="code" >}}
-{{< /cards >}}
+<Cards>
+  <Card title="生命周期" icon="refresh" href="/docs/specification/basic/lifecycle" />
+  <Card title="资源" icon="document" href="/docs/specification/server/resources" />
+  <Card title="提示词" icon="chat-alt-2" href="/docs/specification/server/prompts" />
+  <Card title="工具" icon="adjustments" href="/docs/specification/server/tools" />
+  <Card title="日志" icon="annotation" href="/docs/specification/server/utilities/logging" />
+  <Card title="采样" icon="code" href="/docs/specification/client/sampling" />
+</Cards>
 
 ## 认证
 
