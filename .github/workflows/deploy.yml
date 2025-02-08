@@ -1,4 +1,4 @@
-name: Deploy to Mintlify
+name: Start Mintlify Dev Server
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  start-dev-server:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -20,7 +20,5 @@ jobs:
       - name: Install Mintlify
         run: npm install -g mintlify
 
-      - name: Build and Deploy
-        run: |
-          mintlify build
-          mintlify deploy --token ${{ secrets.MINTLIFY_TOKEN }}
+      - name: Start Dev Server
+        run: mintlify dev --port 3333
