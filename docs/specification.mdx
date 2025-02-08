@@ -3,8 +3,9 @@ title: "规范（最新版本）"
 description: "Model Context Protocol 最新版本规范文档"
 ---
 
-{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
-{{< /callout >}}
+:::info
+**协议版本**: 2024-11-05
+:::
 
 [Model Context Protocol](https://modelcontextprotocol.io) (MCP) 是一个开放协议，它能够实现 LLM 应用程序与外部数据源和工具之间的无缝集成。无论您是在构建 AI 驱动的 IDE、增强聊天界面，还是创建自定义 AI 工作流，MCP 都为 LLM 提供了一种标准化的方式来获取所需的上下文。
 
@@ -104,8 +105,10 @@ Model Context Protocol 通过任意数据访问和代码执行路径启用强大
 
 探索每个协议组件的详细规范：
 
-{{< cards >}} {{< card link="architecture" title="架构" icon="template" >}}
-{{< card link="basic" title="基础协议" icon="code" >}}
-{{< card link="server" title="服务器功能" icon="server" >}}
-{{< card link="client" title="客户端功能" icon="user" >}}
-{{< card link="contributing" title="贡献" icon="pencil" >}} {{< /cards >}}
+<Cards>
+  <Card title="架构" icon="template" href="/docs/specification/architecture" />
+  <Card title="基础协议" icon="code" href="/docs/specification/basic" />
+  <Card title="服务器功能" icon="server" href="/docs/specification/server" />
+  <Card title="客户端功能" icon="user" href="/docs/specification/client" />
+  <Card title="贡献" icon="pencil" href="/docs/specification/contributing" />
+</Cards>

@@ -3,8 +3,9 @@ title: "工具"
 description: "MCP 服务器提供的工具功能和外部系统交互"
 ---
 
-{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
-{{< /callout >}}
+:::info
+**协议版本**: 2024-11-05
+:::
 
 Model Context Protocol (MCP) 允许服务器暴露可由语言模型调用的工具。Tools 使模型能够与外部系统交互，例如查询数据库、调用 API 或执行计算。每个工具都由名称唯一标识，并包含描述其模式的元数据。
 
@@ -14,13 +15,15 @@ MCP 中的工具被设计为 **model-controlled**（模型控制），这意味�
 
 然而，实现者可以自由地通过任何适合其需求的界面模式来暴露工具——协议本身不强制要求特定的用户交互模型。
 
-{{< callout type="warning" >}} 出于信任、安全和安全性考虑，**SHOULD** 始终有人类参与循环，能够拒绝工具调用。
+:::warning
+出于信任、安全和安全性考虑，**SHOULD** 始终有人类参与循环，能够拒绝工具调用。
 
 应用程序 **SHOULD**：
 
 - 提供清晰显示哪些工具暴露给 AI 模型的 UI
 - 在工具被调用时插入清晰的视觉指示器
-- 向用户呈现操作确认提示，以确保有人类参与循环 {{< /callout >}}
+- 向用户呈现操作确认提示，以确保有人类参与循环
+:::
 
 ## 功能
 
@@ -42,7 +45,7 @@ MCP 中的工具被设计为 **model-controlled**（模型控制），这意味�
 
 ### 列出工具
 
-要检索可用工具，客户端发送 `tools/list` 请求。此操作支持 [分页]({{< ref "/specification/2024-11-05/server/utilities/pagination" >}})。
+要检索可用工具，客户端发送 `tools/list` 请求。此操作支持 [分页](/docs/specification/server/utilities/pagination)。
 
 **请求：**
 
@@ -195,7 +198,7 @@ sequenceDiagram
 
 #### Embedded Resources
 
-可以嵌入 [Resources]({{< ref "/specification/2024-11-05/server/resources" >}})，以提供额外的上下文或数据，通过客户端稍后可以订阅或再次获取的 URI：
+可以嵌入 [Resources](/docs/specification/server/resources)，以提供额外的上下文或数据，通过客户端稍后可以订阅或再次获取的 URI：
 
 ```json
 {

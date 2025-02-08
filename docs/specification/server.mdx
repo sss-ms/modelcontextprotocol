@@ -3,8 +3,9 @@ title: "服务器功能"
 description: "Model Context Protocol 服务器功能规范"
 ---
 
-{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
-{{< /callout >}}
+:::info
+**协议版本**: 2024-11-05
+:::
 
 服务器通过 MCP 提供了向语言模型添加上下文的基本构建块。这些原语实现了客户端、服务器和语言模型之间的丰富交互：
 
@@ -22,6 +23,8 @@ description: "Model Context Protocol 服务器功能规范"
 
 在下面详细探索这些关键原语：
 
-{{< cards >}} {{< card link="prompts" title="提示词" icon="chat-alt-2" >}}
-{{< card link="resources" title="资源" icon="document" >}}
-{{< card link="tools" title="工具" icon="adjustments" >}} {{< /cards >}}
+<Cards>
+  <Card title="提示词" icon="chat-alt-2" href="/docs/specification/server/prompts" />
+  <Card title="资源" icon="document" href="/docs/specification/server/resources" />
+  <Card title="工具" icon="adjustments" href="/docs/specification/server/tools" />
+</Cards>

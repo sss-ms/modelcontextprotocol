@@ -3,8 +3,9 @@ title: "资源"
 description: "MCP 服务器的资源管理和上下文共享"
 ---
 
-{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
-{{< /callout >}}
+:::info
+**协议版本**: 2024-11-05
+:::
 
 Model Context Protocol (MCP) 为服务器提供了一种标准化的方式来向客户端暴露资源。Resources 允许服务器共享为语言模型提供上下文的数据，如文件、数据库模式或应用程序特定信息。每个资源都由一个 [URI](https://datatracker.ietf.org/doc/html/rfc3986) 唯一标识。
 
@@ -76,7 +77,7 @@ MCP 中的资源被设计为 **application-driven**（应用程序驱动），�
 
 ### 列出资源
 
-要发现可用资源，客户端发送 `resources/list` 请求。此操作支持 [分页]({{< ref "/specification/2024-11-05/server/utilities/pagination" >}})。
+要发现可用资源，客户端发送 `resources/list` 请求。此操作支持 [分页](/docs/specification/server/utilities/pagination)。
 
 **请求：**
 
@@ -148,7 +149,7 @@ MCP 中的资源被设计为 **application-driven**（应用程序驱动），�
 
 ### 资源模板
 
-资源模板允许服务器使用 [URI templates](https://datatracker.ietf.org/doc/html/rfc6570) 暴露参数化资源。参数可以通过 [补全 API]({{< ref "/specification/2024-11-05/server/utilities/completion" >}}) 自动完成。
+资源模板允许服务器使用 [URI templates](https://datatracker.ietf.org/doc/html/rfc6570) 暴露参数化资源。参数可以通过 [补全 API](/docs/specification/server/utilities/completion) 自动完成。
 
 **请求：**
 
