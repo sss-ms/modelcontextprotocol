@@ -76,6 +76,25 @@
       ]
     },
     {
+      "group": "协议规范",
+      "pages": [
+        "specification/2024-11-05/_index",
+        {
+          "group": "基础协议",
+          "pages": ["specification/2024-11-05/basic/_index"]
+        },
+        {
+          "group": "服务器功能",
+          "pages": [
+            "specification/2024-11-05/server/_index",
+            "specification/2024-11-05/server/prompts",
+            "specification/2024-11-05/server/resources",
+            "specification/2024-11-05/server/tools"
+          ]
+        }
+      ]
+    },
+    {
       "group": "开发",
       "pages": [
         "development/updates",
