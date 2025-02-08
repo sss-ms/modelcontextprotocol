@@ -1,0 +1,29 @@
+---
+title: 服务器功能
+cascade:
+  type: docs
+weight: 3
+---
+
+{{< callout type="info" >}} **协议版本**: {{< param protocolRevision >}}
+{{< /callout >}}
+
+服务器通过 MCP 提供了向语言模型添加上下文的基本构建块。这些原语实现了客户端、服务器和语言模型之间的丰富交互：
+
+- **Prompts**：引导语言模型交互的预定义模板或指令
+- **Resources**：为模型提供额外上下文的结构化数据或内容
+- **Tools**：允许模型执行操作或检索信息的可执行函数
+
+每个原语可以在以下控制层次结构中概括：
+
+| 原语 | 控制类型 | 描述 | 示例 |
+| --- | --- | --- | --- |
+| Prompts | User-controlled | 由用户选择调用的交互式模板 | 斜杠命令、菜单选项 |
+| Resources | Application-controlled | 由客户端附加和管理的上下文数据 | 文件内容、git 历史 |
+| Tools | Model-controlled | 暴露给 LLM 以执行操作的函数 | API POST 请求、文件写入 |
+
+在下面详细探索这些关键原语：
+
+{{< cards >}} {{< card link="prompts" title="提示词" icon="chat-alt-2" >}}
+{{< card link="resources" title="资源" icon="document" >}}
+{{< card link="tools" title="工具" icon="adjustments" >}} {{< /cards >}}
