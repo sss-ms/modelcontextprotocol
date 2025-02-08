@@ -8,9 +8,9 @@
   "favicon": "/favicon.svg",
   "theme": "quill",
   "colors": {
-    "primary": "#09090b",
-    "light": "#FAFAFA",
-    "dark": "#09090b"
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
   },
   "topbarLinks": [],
   "topbarCtaButton": {
@@ -24,22 +24,22 @@
     {
       "name": "Python SDK",
       "icon": "python",
-      "url": "https://github.com/modelcontextprotocol/python-sdk"
+      "url": "https://github.com/sss-ms/python-sdk"
     },
     {
       "name": "TypeScript SDK",
       "icon": "square-js",
-      "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+      "url": "https://github.com/sss-ms/typescript-sdk"
     },
     {
       "name": "Kotlin SDK",
       "icon": "square-k",
-      "url": "https://github.com/modelcontextprotocol/kotlin-sdk"
+      "url": "https://github.com/sss-ms/kotlin-sdk"
     },
     {
       "name": "规范",
       "icon": "book",
-      "url": "https://spec.modelcontextprotocol.io"
+      "url": "https://sss-ms.mintlify.app/docs/specification"
     }
   ],
   "navigation": [
@@ -78,15 +78,15 @@
     {
       "group": "协议规范",
       "pages": [
-        "docs/specification/index",
+        "docs/specification",
         {
           "group": "基础协议",
-          "pages": ["docs/specification/basic/index"]
+          "pages": ["docs/specification/basic"]
         },
         {
           "group": "服务器功能",
           "pages": [
-            "docs/specification/server/index",
+            "docs/specification/server",
             "docs/specification/server/prompts",
             "docs/specification/server/resources",
             "docs/specification/server/tools"
