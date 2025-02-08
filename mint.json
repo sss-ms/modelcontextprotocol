@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
+  "defaultPage": "docs/specification",
   "name": "Model Context Protocol",
   "logo": {
     "dark": "/logo/dark.svg",
@@ -7,6 +8,12 @@
   },
   "favicon": "/favicon.svg",
   "theme": "quill",
+  "tabs": [
+    {
+      "name": "规范",
+      "url": "docs/specification"
+    }
+  ],
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -78,7 +85,10 @@
     {
       "group": "协议规范",
       "pages": [
-        "docs/specification",
+        {
+          "group": "",
+          "pages": ["docs/specification"]
+        },
         {
           "group": "基础协议",
           "pages": ["docs/specification/basic"]
@@ -117,6 +127,10 @@
     {
       "source": "/quickstart",
       "destination": "/quickstart/server"
+    },
+    {
+      "source": "/docs/specification/*",
+      "destination": "/docs/specification"
     }
   ],
   "metadata": {
