@@ -12,7 +12,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to Mintlify
-        uses: mintlify/deploy@v2.1.3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.MINTLIFY_TOKEN }}
+          node-version: '18'
+
+      - name: Install Mintlify
+        run: npm install -g mintlify
+
+      - name: Build and Deploy
+        run: |
+          mintlify build
+          mintlify deploy --token ${{ secrets.MINTLIFY_TOKEN }}
