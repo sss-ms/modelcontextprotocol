@@ -24,22 +24,22 @@
     {
       "name": "Python SDK",
       "icon": "python",
-      "url": "https://github.com/modelcontextprotocol/python-sdk"
+      "url": "https://github.com/sss-ms/python-sdk"
     },
     {
       "name": "TypeScript SDK",
       "icon": "square-js",
-      "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+      "url": "https://github.com/sss-ms/typescript-sdk"
     },
     {
       "name": "Kotlin SDK",
       "icon": "square-k",
-      "url": "https://github.com/modelcontextprotocol/kotlin-sdk"
+      "url": "https://github.com/sss-ms/kotlin-sdk"
     },
     {
       "name": "规范",
       "icon": "book",
-      "url": "https://spec.modelcontextprotocol.io"
+      "url": "https://sss-ms.mintlify.app/docs/specification"
     }
   ],
   "navigation": [
