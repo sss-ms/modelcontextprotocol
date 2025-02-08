@@ -82,15 +82,15 @@
     {
       "group": "协议规范",
       "pages": [
-        "docs/specification/index",
+        "docs/specification",
         {
           "group": "基础协议",
-          "pages": ["docs/specification/basic/index"]
+          "pages": ["docs/specification/basic"]
         },
         {
           "group": "服务器功能",
           "pages": [
-            "docs/specification/server/index",
+            "docs/specification/server",
             "docs/specification/server/prompts",
             "docs/specification/server/resources",
             "docs/specification/server/tools"
