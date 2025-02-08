@@ -23,7 +23,7 @@ Prompts 被设计为 **user-controlled**（用户控制），这意味着它们�
 
 ## 功能
 
-支持提示词的服务器在 [初始化]({{< ref "/specification/2024-11-05/basic/lifecycle#initialization" >}}) 期间 **MUST** 声明 `prompts` 功能：
+支持提示词的服务器在 [初始化](/docs/specification/basic/lifecycle#initialization) 期间 **MUST** 声明 `prompts` 功能：
 
 ```json
 {
@@ -41,7 +41,7 @@ Prompts 被设计为 **user-controlled**（用户控制），这意味着它们�
 
 ### 列出提示词
 
-要检索可用的提示词，客户端发送 `prompts/list` 请求。此操作支持 [分页]({{< ref "/specification/2024-11-05/server/utilities/pagination" >}})。
+要检索可用的提示词，客户端发送 `prompts/list` 请求。此操作支持 [分页](/docs/specification/server/utilities/pagination)。
 
 **请求：**
 
@@ -83,7 +83,7 @@ Prompts 被设计为 **user-controlled**（用户控制），这意味着它们�
 
 ### 获取提示词
 
-要检索特定提示词，客户端发送 `prompts/get` 请求。参数可以通过 [补全 API]({{< ref "/specification/2024-11-05/server/utilities/completion" >}}) 自动完成。
+要检索特定提示词，客户端发送 `prompts/get` 请求。参数可以通过 [补全 API](/docs/specification/server/utilities/completion) 自动完成。
 
 **请求：**
 
