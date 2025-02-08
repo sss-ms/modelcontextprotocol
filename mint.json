@@ -78,18 +78,18 @@
     {
       "group": "协议规范",
       "pages": [
-        "specification/_index",
+        "docs/specification/index",
         {
           "group": "基础协议",
-          "pages": ["specification/basic/_index"]
+          "pages": ["docs/specification/basic/index"]
         },
         {
           "group": "服务器功能",
           "pages": [
-            "specification/server/_index",
-            "specification/server/prompts",
-            "specification/server/resources",
-            "specification/server/tools"
+            "docs/specification/server/index",
+            "docs/specification/server/prompts",
+            "docs/specification/server/resources",
+            "docs/specification/server/tools"
           ]
         }
       ]
