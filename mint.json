@@ -1,6 +1,5 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "defaultPage": "docs/specification",
   "name": "Model Context Protocol",
   "logo": {
     "dark": "/logo/dark.svg",
@@ -8,12 +7,6 @@
   },
   "favicon": "/favicon.svg",
   "theme": "quill",
-  "tabs": [
-    {
-      "name": "规范",
-      "url": "docs/specification"
-    }
-  ],
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -85,13 +78,28 @@
     {
       "group": "协议规范",
       "pages": [
+        "docs/specification",
         {
-          "group": "",
-          "pages": ["docs/specification"]
+          "group": "架构",
+          "pages": ["docs/specification/architecture"]
         },
         {
           "group": "基础协议",
-          "pages": ["docs/specification/basic"]
+          "pages": [
+            "docs/specification/basic",
+            "docs/specification/basic/lifecycle",
+            "docs/specification/basic/messages",
+            "docs/specification/basic/transports",
+            "docs/specification/basic/versioning"
+          ]
+        },
+        {
+          "group": "客户端功能",
+          "pages": [
+            "docs/specification/client",
+            "docs/specification/client/roots",
+            "docs/specification/client/sampling"
+          ]
         },
         {
           "group": "服务器功能",
@@ -99,8 +107,16 @@
             "docs/specification/server",
             "docs/specification/server/prompts",
             "docs/specification/server/resources",
-            "docs/specification/server/tools"
+            "docs/specification/server/tools",
+            {
+              "group": "工具函数",
+              "pages": ["docs/specification/server/utilities"]
+            }
           ]
+        },
+        {
+          "group": "贡献",
+          "pages": ["docs/specification/contributing"]
         }
       ]
     },
@@ -127,10 +143,6 @@
     {
       "source": "/quickstart",
       "destination": "/quickstart/server"
-    },
-    {
-      "source": "/docs/specification/*",
-      "destination": "/docs/specification"
     }
   ],
   "metadata": {
