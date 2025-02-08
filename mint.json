@@ -67,6 +67,7 @@
       "group": "概念",
       "pages": [
         "docs/concepts/architecture",
+        "docs/concepts/api-routes",
         "docs/concepts/resources",
         "docs/concepts/prompts",
         "docs/concepts/tools",
